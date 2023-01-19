@@ -1,0 +1,28 @@
+<div class="contenedor-principal">
+  <div class="container">
+    <div class="card text-center">
+      <div class="card-header titulos">
+        Bienvenidos
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Se encuentran en la mejor App de viajes</h5>
+        <p class="card-text">Encuentras viajes con presupuesto desde <strong>$1.000</strong>, hasta <strong>$10.000 </strong>dolares</p>
+
+        <div class="input-group flex-nowrap mb-10px">
+
+          <input type="number"
+          class="form-control"
+          placeholder="Ingresa tu presupuesto"
+          name="presupuesto"
+          [(ngModel)]="presupuesto"
+          aria-label="Username"
+          aria-describedby="addon-wrapping">
+        </div>
+        <hr>
+        <a  class="btn btn-primary" (click)="verOfertasDeViaje()">Ver ofertas de viaje</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>

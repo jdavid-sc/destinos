@@ -1,0 +1,26 @@
+
+.contenedor-principal {
+  min-height: 610px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../../assets/images/naturaleza-background.jpeg);
+  background-repeat: no-repeat;
+  
+}
+.container {
+  width: 700px;
+}
+
+.form-control {
+  text-align: center;
+  font-size:30px ;
+  font-weight: 400;
+  color: orange;
+}
+.titulos {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
