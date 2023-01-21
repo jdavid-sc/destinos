@@ -1,21 +1,19 @@
+
+
 <div class="container">
-  <div class="card" style="width: 18rem;">
-    <img src="/assets/images/1-primeraClase.jpg" class="card-img-top" alt="imagen-destino">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+
+  <div class="row">
+    <div *ngFor="let destino of destinosPrimeraClase"
+    (click)="destinoSeleccionado(destino.id)" class="card m-4" style="width: 18rem;">
+      <img src="{{ destino.imagen }}" class="card-img-top pt-3" alt="imagen-destino">
+      <div class="card-body">
+        <h5 class="card-title">{{destino.nombre}}</h5>
+        <h5 class="card-title precio">$ {{destino.precio}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="card" style="width: 18rem;">
-    <img src="/assets/images/1-primeraClase.jpg" class="card-img-top" alt="imagen-destino">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
+

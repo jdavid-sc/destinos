@@ -18,13 +18,15 @@ export class PresupuestoComponent implements OnInit {
   ngOnInit(): void {
   }
   verOfertasDeViaje(){
-    
-    if (this.presupuesto >= 8000 ){
-      this.router.navigate(['/primeraClase'])
-    }else if(this.presupuesto >= 4500){
-      this.router.navigate(['/claseEjecutiva'])
-    }else if(this.presupuesto < 4500  ){
-      this.router.navigate(['/economica'])
+    if(this.presupuesto){
+      this.router.navigate(['/destinos'])
     }
+   // if (this.presupuesto >= 8000 ){
+   //   this.router.navigate(['/primeraClase'])
+   // }else if(this.presupuesto >= 4500){
+   //   this.router.navigate(['/claseEjecutiva'])
+   // }else if(this.presupuesto < 4500  ){
+   //   this.router.navigate(['/economica'])
+   // }
   }
 }
